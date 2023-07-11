@@ -1,3 +1,71 @@
+/*font-family: 'Kaushan Script', cursive; */
+
 body{
-    background-color: red;
+    margin: 0px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6; /*Междустрочный отступ*/
+    font-size: 15px;
+    color: #333333;
+}
+
+*,
+*:after,
+*:before{
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0; /* Для всех заголовков сбрасываем отступы */
+}
+
+/* Container*/
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Intro */
+.intro{
+    width: 100%;
+    height: 100vh; /* Высота будет занимать 100% экрана монитора*/
+
+    background: url(../images/intro.jpg) center no-repeat; /* Задний фон для блока */
+    background-size: cover; /* Масштабирует изображение с сохранением пропорций */
+}
+
+/* Header */
+.header{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header__logo{
+    font-size: 30px;
+    font-weight: 700; /* Bold*/
+    color: #fff;
+}
+
+/* Nav */
+.nav{
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.nav__link{
+    display: inline-block;  /* Для того, чтобы ссылки шли в строку*/
+    vertical-align: top;
+
+    color: #fff;
+    text-decoration: none;
+
+    transition: color 0.2s linear;
+}
+
+.nav__link:hover{
+    color: #fce38a;;
 }
